@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#svg-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    pointer-events: none;
+    animation: animateDash 2s linear 0.1s 1 normal forwards;
+}
+#square {
+    width: 500px;
+    position: absolute;
+}
+
+@media (max-width: 1280px) {
+    #square {
+        width: 450px;
+        height: 450px;
+    }
+}
+@media (max-width: 1188px) {
+    #square {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 1023px) {
+    #square {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+.supermarkie {
+    width: 250px;
+    height: 250px;
+}
+@keyframes animateDash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes rotateSquare {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
