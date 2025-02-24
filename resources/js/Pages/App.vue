@@ -41,18 +41,11 @@
                     </p>
                 </div>
                 <div class="sm:flex sm:space-y-0 sm:space-x-4">
-                    <!-- <Github />
-                    <LinkedIn /> -->
-
-                    <!-- <CurrentlyPlaying
-                        :spotifyToken="spotifyToken"
-                        @currentlyPlaying="handleCurrentlyPlaying"
-                    />
-                    <LastPlayed
-                        v-if="!currentlyPlaying"
-                        :spotifyToken="spotifyToken"
-                    /> -->
                     <Music />
+                </div>
+                <div class="sm:flex sm:space-y-0 sm:space-x-4">
+                    <Github />
+                    <LinkedIn />
                 </div>
             </div>
 
