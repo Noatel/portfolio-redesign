@@ -11,15 +11,11 @@
 }
 #square {
     width: 500px;
+    height: 350px;
+    top: 20px;
     position: absolute;
 }
 
-@media (max-width: 1280px) {
-    #square {
-        width: 450px;
-        height: 450px;
-    }
-}
 @media (max-width: 1188px) {
     #square {
         width: 400px;

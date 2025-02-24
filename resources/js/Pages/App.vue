@@ -43,20 +43,22 @@
                 <div class="sm:flex sm:space-y-0 sm:space-x-4">
                     <Music />
                 </div>
-                <div class="sm:flex sm:space-y-0 sm:space-x-4">
-                    <Github />
-                    <LinkedIn />
-                </div>
             </div>
 
             <!-- Right Column (Image) -->
-            <div class="lg:mt-0 lg:col-span-5 lg:flex mt-8 lg:mt-0">
+            <div
+                class="lg:mt-0 lg:col-span-5 lg:flex lg:flex-col items-center mt-8 lg:mt-0"
+            >
                 <Square />
                 <img
-                    class="relative z-0 w-full max-w-md mx-auto lg:max-w-none me"
+                    class="block relative z-2 w-full max-w-md mx-auto lg:max-w-none mt-4"
                     src="../../../public/noah-telussa.png"
                     alt="hero image"
                 />
+                <div class="relative block mt-4 z-3">
+                    <Github />
+                    <LinkedIn />
+                </div>
             </div>
         </div>
     </section>
