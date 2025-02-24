@@ -5,7 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title inertia>{{ config('app.name', 'Laravel') }}</title>
+    <title inertia> Noah Telussa </title>
+
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Portfolio of Noah Telussa">
+    <meta name="keywords" content="Portfolio, Developer, PHP, Laravel, Vue.js, TailwindCSS, Noah Telussa">
+    <meta name="robots" content="index, follow">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
