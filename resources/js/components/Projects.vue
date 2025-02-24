@@ -5,13 +5,11 @@
                 <div class="grid md:grid-cols-1 md:grid-cols-3 gap-4 w-full">
                     <div class="md:col-span-2 p-4">
                         <h2
-                            class="inline-block max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl xl:text-6xl dark:text-white"
+                            class="inline-block max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl xl:text-6xl"
                         >
                             Supermarkie
                         </h2>
-                        <p
-                            class="mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-400"
-                        >
+                        <p class="mt-4 text-sm sm:text-base text-gray-700">
                             Besides my GitHub projects, I’m currently working on
                             a personal project called Supermarkie. It’s a
                             platform designed to improve the ordering system for
@@ -38,7 +36,7 @@
                     <div class="md:col-span-1 flex justify-center">
                         <img
                             class="supermarkie max-w-full h-auto"
-                            src="/public/supermarkie.png"
+                            src="../../../public/supermarkie.png"
                             alt="hero image"
                         />
                     </div>
@@ -48,13 +46,11 @@
             <div class="m-10"></div>
 
             <h3
-                class="p-4 inline-block mt-4 max-w-3xl mb-4 text-2xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-2xl xl:text-2xl dark:text-white"
+                class="p-4 inline-block mt-4 max-w-3xl mb-4 text-2xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-2xl xl:text-2xl"
             >
                 Albert-heijn-api-client
             </h3>
-            <p
-                class="p-4 mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-400"
-            >
+            <p class="p-4 mt-4 text-sm sm:text-base text-gray-700">
                 As part of this project, I reverse-engineered the Albert Heijn
                 API and developed the albert-heijn-api-client. Since the API
                 isn’t publicly documented, my focus has been on improving its
