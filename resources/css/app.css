@@ -31,11 +31,32 @@ iframe {
 .me {
     height: 350px;
 }
+.noah {
+    color: #3182ce;
+}
+
+.left {
+    height: 400px;
+}
 #square {
     width: 500px;
     position: absolute;
 }
 
+#currently-playing,
+#currently-playing-loader,
+#last-played,
+#last-played-loader {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#last-played-loader {
+    z-index: inherit;
+}
 @media (max-width: 1280px) {
     #square {
         width: 450px;

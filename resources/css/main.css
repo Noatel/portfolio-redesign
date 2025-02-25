@@ -15,7 +15,9 @@
     top: 20px;
     position: absolute;
 }
-
+iframe {
+    display: none;
+}
 @media (max-width: 1188px) {
     #square {
         width: 400px;
