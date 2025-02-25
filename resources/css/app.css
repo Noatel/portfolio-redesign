@@ -76,6 +76,13 @@ iframe {
     }
 }
 
+@media (max-width: 600px) {
+    #last-played-loader {
+        top: 50px;
+        width: 101%;
+    }
+}
+
 .supermarkie {
     width: 250px;
     height: 250px;
