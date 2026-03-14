@@ -1,76 +1,140 @@
 <template>
-    <section class="py-8 sm:py-12">
-        <div class="max-w-screen-xl mx-auto">
-            <div class="mr-auto place-self-center lg:col-span-7">
-                <div class="grid md:grid-cols-1 md:grid-cols-3 gap-4 w-full">
-                    <div class="md:col-span-2 p-4">
-                        <h2
-                            class="inline-block max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl lg:text-5xl xl:text-6xl"
-                        >
-                            Supermarkie
-                        </h2>
-                        <p class="mt-4 text-sm sm:text-base text-gray-700">
-                            Besides my GitHub projects, I’m currently working on
-                            a personal project called Supermarkie. It’s a
-                            platform designed to improve the ordering system for
-                            supermarkets like Albert Heijn. The current system
-                            only allows one computer or account to place orders,
-                            which creates inefficiencies. Groups can only add
-                            items to the shopping list if they share login
-                            credentials or gather around a single computer.
-                            Supermarkie solves this by enabling teams to
-                            collaborate on grocery shopping without sharing
-                            sensitive account details.
-                            <br /><br />
-                            It's like Uber Eats group order but for groceries!
-                            <br /><br />
-                            <a
-                                href="https://supermarkie.nl/"
-                                target="_blank"
-                                class="text-blue-600 visited:text-purple-600"
-                            >
-                                Supermarkie.nl
-                            </a>
-                        </p>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center">
-                        <img
-                            class="supermarkie max-w-full h-auto"
-                            src="../../../public/supermarkie.png"
-                            alt="hero image"
+    <div class="grid sm:grid-cols-2 gap-4">
+        <!-- Supermarkie Card -->
+        <div
+            class="flex flex-col border border-zinc-800 rounded-xl p-6 bg-zinc-900/20 hover:border-zinc-700 hover:bg-zinc-900/50 transition-all duration-200"
+        >
+            <div class="flex items-start justify-between mb-4">
+                <div>
+                    <h3 class="text-base font-semibold text-white">
+                        Supermarkie
+                    </h3>
+                    <p class="text-xs text-zinc-600 mt-0.5">Personal project</p>
+                </div>
+                <img
+                    src="../../../public/supermarkie.png"
+                    alt="Supermarkie mascot"
+                    class="w-11 h-11 rounded-lg object-cover"
+                />
+            </div>
+
+            <p class="text-sm text-zinc-400 leading-relaxed mb-5 flex-1">
+                A platform for collaborative supermarket ordering — like Uber
+                Eats group order but for groceries. Teams can add items to a
+                shared list without sharing Albert Heijn login credentials.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5 mb-5">
+                <span
+                    v-for="tag in supermarkieTags"
+                    :key="tag"
+                    class="px-2 py-0.5 text-xs text-zinc-500 border border-zinc-800 rounded"
+                >
+                    {{ tag }}
+                </span>
+            </div>
+
+            <a
+                href="https://supermarkie.nl/"
+                target="_blank"
+                class="inline-flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white transition-colors"
+            >
+                supermarkie.nl
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Albert Heijn API Client Card -->
+        <div
+            class="flex flex-col border border-zinc-800 rounded-xl p-6 bg-zinc-900/20 hover:border-zinc-700 hover:bg-zinc-900/50 transition-all duration-200"
+        >
+            <div class="flex items-start justify-between mb-4">
+                <div>
+                    <h3 class="text-base font-semibold text-white">
+                        albert-heijn-api-client
+                    </h3>
+                    <p class="text-xs text-zinc-600 mt-0.5">PHP library</p>
+                </div>
+                <div
+                    class="w-11 h-11 rounded-lg bg-zinc-800/80 border border-zinc-700 flex items-center justify-center text-zinc-400 shrink-0"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                         />
-                    </div>
+                    </svg>
                 </div>
             </div>
 
-            <div class="m-10"></div>
-
-            <h3
-                class="p-4 inline-block mt-4 max-w-3xl mb-4 text-2xl font-extrabold leading-none tracking-tight md:text-2xl lg:text-2xl xl:text-2xl"
-            >
-                Albert-heijn-api-client
-            </h3>
-            <p class="p-4 mt-4 text-sm sm:text-base text-gray-700">
-                As part of this project, I reverse-engineered the Albert Heijn
-                API and developed the albert-heijn-api-client. Since the API
-                isn’t publicly documented, my focus has been on improving its
-                usability and making it more accessible. With this client, I can
-                easily search for products, add items to the basket, retrieve
-                products from different categories, and access recipes. The
-                project is currently private, but I may make it public in the
-                future.
-                <br /><br />
-                <b
-                    >Currently this project is still private but maybe public in
-                    the future</b
-                >
+            <p class="text-sm text-zinc-400 leading-relaxed mb-5 flex-1">
+                A PHP client for the undocumented Albert Heijn API, built
+                through reverse engineering. Enables product search, basket
+                management, category browsing, and recipe access.
             </p>
+
+            <div class="flex flex-wrap gap-1.5 mb-5">
+                <span
+                    v-for="tag in ahTags"
+                    :key="tag"
+                    class="px-2 py-0.5 text-xs text-zinc-500 border border-zinc-800 rounded"
+                >
+                    {{ tag }}
+                </span>
+            </div>
+
+            <span
+                class="inline-flex items-center gap-1.5 text-sm text-zinc-600 cursor-default select-none"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                    />
+                </svg>
+                Private — may open source in the future
+            </span>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
 export default {
     name: "Projects",
+    data() {
+        return {
+            supermarkieTags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
+            ahTags: ["PHP", "Reverse Engineering", "REST API", "Composer"],
+        };
+    },
 };
 </script>
