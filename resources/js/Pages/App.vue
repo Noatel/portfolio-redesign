@@ -4,7 +4,7 @@
         <section class="relative overflow-hidden bg-white">
             <!-- Radial glow -->
             <div
-                class="grid max-w-screen-xl px-4 pt-12 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
+                class="grid max-w-screen-xl px-4 pt-12 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-14"
             >
                 <!-- Left Column (Text Content) -->
                 <div class="mr-auto place-self-center lg:col-span-7 left">
@@ -22,7 +22,7 @@
                             >
                                 <g id="Page-1" fill="none" fill-rule="evenodd">
                                     <path
-                                        stroke="#926861"
+                                        stroke="#C0272D"
                                         stroke-width="6"
                                         id="svg-path"
                                         stroke-linecap="round"
@@ -72,13 +72,15 @@
             <div class="h-px bg-zinc-800/60" />
         </div>
 
-        <section class="max-w-4xl mx-auto px-6 py-14">
+        <section
+            class="max-w-screen-xl px-4 pt-12 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-14"
+        >
             <h2
-                class="text-xs font-semibold text-zinc-500 uppercase tracking-widest mb-5"
+                class="text-xs font-semibold text-white uppercase tracking-widest mb-5"
             >
                 Tech Stack
             </h2>
-            <div class="flex flex-wrap gap-2">
+            <div class="flex flex-wrap gap-4">
                 <span
                     v-for="skill in skills"
                     :key="skill"
@@ -94,9 +96,11 @@
             <div class="h-px bg-zinc-800/60" />
         </div>
 
-        <section class="max-w-4xl mx-auto px-6 py-14 pb-28">
+        <section
+            class="max-w-screen-xl px-4 pt-12 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-14"
+        >
             <h2
-                class="text-xs font-semibold text-zinc-500 uppercase tracking-widest mb-8"
+                class="text-xs font-semibold text-white uppercase tracking-widest mb-8"
             >
                 Projects
             </h2>
@@ -104,7 +108,9 @@
         </section>
 
         <!-- Footer -->
-        <footer class="max-w-4xl mx-auto px-6 py-6 border-t border-zinc-800/60">
+        <footer
+            class="max-w-screen-xl px-4 pt-12 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
+        >
             <p class="text-xs text-zinc-700">
                 © {{ new Date().getFullYear() }} Noah Telussa
             </p>
