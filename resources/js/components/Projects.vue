@@ -57,18 +57,18 @@
             </a>
         </div>
 
-        <!-- Feedie Card -->
+        <!-- Placie Card -->
         <div
             class="flex flex-col border border-zinc-800 rounded-xl p-6 bg-zinc-900/20 hover:border-zinc-700 hover:bg-zinc-900/50 transition-all duration-200"
         >
             <div class="flex items-start justify-between mb-4">
                 <div>
-                    <h3 class="text-base font-semibold text-white">Feedie</h3>
+                    <h3 class="text-base font-semibold text-white">Placie</h3>
                     <p class="text-xs text-zinc-600 mt-0.5">Personal project</p>
                 </div>
                 <img
                     src="../../../public/feedie-transparent.png"
-                    alt="Feedie mascot"
+                    alt="Placie mascot"
                     class="w-11 h-11 rounded-lg object-cover"
                 />
             </div>
@@ -81,7 +81,7 @@
 
             <div class="flex flex-wrap gap-1.5 mb-5">
                 <span
-                    v-for="tag in feedieTags"
+                    v-for="tag in placieTags"
                     :key="tag"
                     class="px-2 py-0.5 text-xs text-zinc-500 border border-zinc-800 rounded"
                 >
@@ -90,11 +90,11 @@
             </div>
 
             <a
-                href="https://feedie.nl/"
+                href="https://placie.nl/"
                 target="_blank"
                 class="inline-flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white transition-colors"
             >
-                feedie.nl
+                placie.nl
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="w-3.5 h-3.5"
@@ -189,7 +189,7 @@ export default {
         return {
             supermarkieTags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
             ahTags: ["PHP", "Reverse Engineering", "REST API", "Composer"],
-            feedieTags: ["Laravel", "PHP", "Tailwind CSS", "Meta API", "MySQL"],
+            placieTags: ["Laravel", "PHP", "Tailwind CSS", "Meta API", "MySQL"],
         };
     },
 };
